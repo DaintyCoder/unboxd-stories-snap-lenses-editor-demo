@@ -72,7 +72,7 @@ export const CameraKit: React.FC<{ children: React.ReactNode }> = ({ children })
     // Render a loading state
     // While Camera Kit is initializing and there is no active session, render a loading state.
     return !session ? (
-        <div>
+        <div className="center-container">
             <button onClick={handleUserGesture}>Initialize Camera Kit</button>
         </div>
     ) : (
